@@ -678,10 +678,10 @@ function openImage(img){
 
   if(likedPhotos[currentPhoto]){
   likeButton.classList.add("liked");
-  likeButton.textContent = "💚";
+  likeButton.textContent = "💚";
 } else {
   likeButton.classList.remove("liked");
-  likeButton.textContent = "🤍";
+  likeButton.textContent = "🤍";
 }
 }
 
@@ -693,11 +693,11 @@ function toggleLike(button){
   button.classList.toggle("liked");
 
   if(button.classList.contains("liked")){
-    button.textContent = "💚";
+    button.textContent = "💚";
     likedPhotos[currentPhoto] = true;
     createHeart();
   } else {
-    button.textContent = "🤍";
+    button.textContent = "🤍";
     delete likedPhotos[currentPhoto];
   }
 
@@ -728,7 +728,7 @@ function createHeart(){
 
     const heart = document.createElement("div");
     heart.classList.add("floating-heart");
-    heart.textContent = "💚";
+    heart.textContent = "💚";
 
     heart.style.left = centerX + "px";
     heart.style.top = centerY + "px";
@@ -760,6 +760,7 @@ highlightActiveTrack();
 </body>
 
 </html>
+
 
 
 
